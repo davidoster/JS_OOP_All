@@ -21,6 +21,7 @@ let myObjectBL = {
 }
 
 console.log(myPersonalLoan.execute(myObjectBL))
+console.log(myPersonalLoan.execute(myObjectBL))
 document.write(myPersonalLoan.execute(myObjectBL))
 
 
