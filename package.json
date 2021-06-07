@@ -1,0 +1,25 @@
+{
+  "name": "javascript_revision",
+  "version": "0.0.1",
+  "description": "Just to try out some OOP concepts along with DB",
+  "main": "index.js",
+  "scripts": {
+    "main": "node .\\index.js",
+    "koukou": "node .\\index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .\\index.js"
+  },
+  "keywords": [
+    "javascript",
+    "oop",
+    "databases",
+    "mysql2",
+    "prompt"
+  ],
+  "author": "davidoster",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^2.2.5",
+    "prompt": "^1.1.0"
+  }
+}
