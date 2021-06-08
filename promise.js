@@ -1,6 +1,6 @@
 let myPromise = new Promise(function(resolve, reject) {
-    // resolve(new Boolean(true))
-    reject("All Bad!")
+    resolve("All good")
+    // reject("All Bad!")
     
 })
 console.log(myPromise)

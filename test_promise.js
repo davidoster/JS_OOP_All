@@ -4,6 +4,7 @@
     
 // }))
 // const mod_myproms = require("./mypromises.js")
+// document.write("<p>Hello</p>")
 import { MyPromise } from "./mypromises.js"
 
 // const Promise = mod_myproms.Promise
@@ -21,11 +22,25 @@ let myObjectBL = {
 }
 
 console.log(myPersonalLoan.execute(myObjectBL))
-console.log(myPersonalLoan.execute(myObjectBL))
-console.log(myPersonalLoan.execute(myObjectBL))
-document.write(myPersonalLoan.execute(myObjectBL))
+// console.log(myPersonalLoan.execute(myObjectBL))
+// console.log(myPersonalLoan.execute(myObjectBL))
+let result = myPersonalLoan.execute(myObjectBL)
+result.then((output) => 
+{ 
+    console.log(output)
+    setTimeout(() => {
+        document.getElementById("loan_result").innerText = output
+    },8000)
+    
+    
+})
 
+result.catch((output) => {
+    console.log(output)
+    document.getElementById("loan_result").innerText = output
+})
 
-
-
-
+result.finally(() => {
+    console.log(`Finally block: Finished`)
+    // document.getElementById("loan_result").innerText = output
+})
